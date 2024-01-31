@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/todo_controller.dart';
 import 'package:get/get.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -11,7 +10,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("CRUD FIREBASE"),
+        title: const Text("CRUD FIREBASE",style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
@@ -30,7 +29,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 10,
+                  width: 10,  
                 ),
                 InkWell(
                   onTap: () {

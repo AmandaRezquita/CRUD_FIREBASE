@@ -11,9 +11,9 @@ class TodoModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data["id"] = id;
-    data["title"] = title;
-    return data;
+    final Map<String, dynamic> _data = <String, dynamic>{};
+    _data["id"] = id;
+    _data["title"] = title;
+    return _data;
   }
 }

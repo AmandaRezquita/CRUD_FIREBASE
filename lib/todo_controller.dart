@@ -24,7 +24,7 @@ class TodoController extends GetxController {
       id: id,
       title: title.text,
     );
-    await db.collection("todo").doc(id).set(newTodo.toJson());
+    await db.collection("todo").doc(id.toString()).set(newTodo.toJson());
     title.clear();
     getTodo();
     print("Todo added to Database");
@@ -57,4 +57,5 @@ class TodoController extends GetxController {
     Get.back();
     print("Todo Updated");
   }
+
 }
